@@ -116,8 +116,8 @@
       scenes[roomId] = {
         title: room.title,
         type: "equirectangular",
-        panorama: "images/" + room.image,
-
+        panorama: room.image,
+        
         hotSpots: (room.hotSpots || []).map((spot) => ({
           pitch: spot.pitch,
           yaw: spot.yaw,
